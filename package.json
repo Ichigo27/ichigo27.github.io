@@ -1,5 +1,6 @@
 {
   "name": "react_portfolio",
+  "homepage": "https://ichigo27.github.io/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
@@ -11,6 +12,7 @@
     "bootstrap": "^5.0.0-beta1",
     "font-awesome": "^4.7.0",
     "framer-motion": "^3.2.2-rc.1",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-alert": "^7.0.2",
     "react-alert-template-basic": "^1.0.0",
@@ -24,6 +26,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
