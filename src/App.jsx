@@ -5,6 +5,7 @@ import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import ClipLoader from "react-spinners/ScaleLoader";
 import { Helmet } from "react-helmet";
+import ReactGA from "react-ga";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
@@ -28,6 +29,8 @@ const App = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		ReactGA.initialize("G-RKZEQ0E1CE");
+		ReactGA.pageview(window.location.pathname + window.location.search);
 		setLoading(true);
 		console.log("loading");
 		setTimeout(() => {
