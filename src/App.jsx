@@ -67,7 +67,7 @@ const App = () => {
 						/>
 						<meta
 							itemprop="google-site-verification"
-							content="fgf203gnqBEpaQOeJraSC9fc73_zD9QGUrMByR4Jwbo"
+							content="7C6qNryXEe6-iQNOQc8C41KTpQ30mUucwft4uS_wLD0"
 						/>
 						{/* <!-- Facebook Meta Tags --> */}
 						<meta
